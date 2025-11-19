@@ -1,7 +1,10 @@
 # MAriaDB_Demo
 
-Part A
 
+
+# Part A
+
+```sql
 MariaDB [mysql]> select * from user where user='admin' and host='localhost'\G
 *************************** 1. row ***************************
                   Host: localhost
@@ -82,7 +85,12 @@ Show_create_routine_priv: Y
 1 row in set (0.003 sec)
 
 
-Part B
+
+
+
+# Part B
+```sql
+
 MariaDB [mysql]> select * from tables_priv where user='sales'\G
 *************************** 1. row ***************************
        Host: localhost
@@ -113,7 +121,8 @@ Column_priv:
 Column_priv: 
 3 rows in set (0.004 sec)
 
-Part C
+#Part C
+```sql
 MariaDB [mysql]> select * from columns_priv where user='artist' and host='localhost';
 +-----------+-------+--------+------------+-------------+---------------------+-------------+
 | Host      | Db    | User   | Table_name | Column_name | Timestamp           | Column_priv |
@@ -137,6 +146,7 @@ MariaDB [mysql]> select * from tables_priv   where user='artist' and host='local
 
 
 #Part D
+```sql
 
 MariaDB [lyric]> desc cd;
 +------------+-------------+------+-----+---------+-------+
@@ -206,8 +216,8 @@ MariaDB [lyric]> SELECT * FROM cd;
 +---------------+--------------------+----------+--------------------------------+
 
 
-PArt E
-
+#PArt E
+```sql
 MariaDB [mysql]> SELECT user, host, password FROM user;
 +-------------+-----------------------------+-------------------------------------------+
 | User        | Host                        | Password                                  |
